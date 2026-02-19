@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Des Moines Permanent Outdoor Lighting</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 body {
     margin: 0;
@@ -6,11 +12,11 @@ body {
     color: white;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
     position: relative;
-    height: 95vh;
-    background: url('hero.jpg') center/cover no-repeat;
+    height: 100vh;
+    background: url('hero.jpg') center center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,7 +38,7 @@ body {
 }
 
 .hero h1 {
-    font-size: 50px;
+    font-size: 48px;
     margin-bottom: 20px;
 }
 
@@ -50,11 +56,11 @@ body {
     border-radius: 6px;
     display: inline-block;
     margin-top: 25px;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
-    background: #00a6d6;
+    background: #009ac7;
 }
 
 /* SECTIONS */
@@ -64,15 +70,13 @@ body {
     background: #161b22;
 }
 
-.section h2 {
-    margin-bottom: 20px;
-    font-size: 30px;
+.section.dark {
+    background: #0d1117;
 }
 
-.pricing {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 20px;
+.section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 input, textarea {
@@ -92,12 +96,11 @@ button {
     font-weight: bold;
     cursor: pointer;
     border-radius: 6px;
-    font-size: 16px;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 button:hover {
-    background: #00a6d6;
+    background: #009ac7;
 }
 
 footer {
@@ -106,3 +109,43 @@ footer {
     font-size: 14px;
 }
 </style>
+</head>
+
+<body>
+
+<div class="hero">
+    <div class="hero-content">
+        <h1>Permanent Outdoor Lighting Installation in Des Moines</h1>
+        <p>Custom, app-controlled lighting systems built for Iowa weather and year-round curb appeal.</p>
+        <a href="#form" class="btn">Get Free Consultation</a>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Why Upgrade?</h2>
+    <p>No more hanging lights every year.</p>
+    <p>Instant color changes for holidays and events.</p>
+    <p>Weather-resistant permanent systems.</p>
+</div>
+
+<div class="section dark">
+    <h2>Typical Investment</h2>
+    <p>$2,500 – $7,500 depending on home size and layout.</p>
+</div>
+
+<div class="section" id="form">
+    <h2>Request Free Consultation</h2>
+    <form action="https://formspree.io/f/mnjbpgaw" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required><br>
+        <input type="email" name="email" placeholder="Email Address" required><br>
+        <textarea name="message" placeholder="Tell us about your home..." required></textarea><br>
+        <button type="submit">Submit Request</button>
+    </form>
+</div>
+
+<footer>
+Permanent outdoor lighting coordination in Des Moines, Iowa.
+</footer>
+
+</body>
+</html>
